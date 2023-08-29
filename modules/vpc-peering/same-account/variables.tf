@@ -4,7 +4,7 @@ variable "acceptor_vpc_id" {}
 
 
 data "aws_vpc" "requestor" {
-  id = var.acceptor_vpc_id
+  id = var.requestor_vpc_id
 }
 
 data "aws_route_tables" "requestor" {
